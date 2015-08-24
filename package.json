@@ -1,33 +1,22 @@
 {
-  "name": "react-tutorial",
-  "version": "0.0.0",
-  "description": "Code from the React tutorial.",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.4.3",
-    "express": "^4.4.5"
-  },
-  "devDependencies": {},
+  "name": "ladder",
+  "version": "1.0.0",
+  "description": "A ladder league app.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactjs/react-tutorial.git"
+    "url": "git+https://github.com/swillis/ladder.git"
   },
-  "keywords": [
-    "react",
-    "tutorial",
-    "comment",
-    "example"
-  ],
-  "author": "petehunt",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reactjs/react-tutorial/issues"
+    "url": "https://github.com/swillis/ladder/issues"
   },
-  "homepage": "https://github.com/reactjs/react-tutorial",
-  "engines" : {
-    "node" : "0.12.x"
+  "homepage": "https://github.com/swillis/ladder#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5"
   }
 }
