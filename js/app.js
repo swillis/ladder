@@ -10,9 +10,7 @@ var App = React.createClass({
   render:function(){
     return (
       <div>
-        <input type="text" onChange={this.update} />
-        <br />
-        <b>{this.state.txt}</b>
+        <Widget txt={this.state.txt} update={this.update} />
       </div>
     );
 
@@ -20,20 +18,31 @@ var App = React.createClass({
   }
 });
 
-var Widget = createClass({
-  render:function () {
-    return
+var Widget = React.createClass({
+  render:function(){
+    return (
+      <div>
+        <input type="text" onChange={this.props.update} />
+        <br />
+        <b>{this.props.txt}</b>
+      </div>
+    );
   }
 });
 
 React.render(<App txt ="this is the txt prop" />, document.body);
+
+// var React = require('react');
+// var PropTypes = React.PropTypes;
 //
 // var App = React.createClass({
-//     render: function() {
-//       return (
-//         <h1>Hello</h1>
-//       );
-//     }
-// })
 //
-// React.render(<App />, document.body);
+//   render: function() {
+//     return (
+//       <h1>Hello</h1>
+//     );
+//   }
+//
+// });
+
+module.exports = App;
